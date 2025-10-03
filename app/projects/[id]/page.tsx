@@ -1,10 +1,12 @@
-// (remove "use client")
+// ProjectDetailPage (ruta dinámica /projects/[id])
 import Image from "next/image"
 import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { mockProjects } from "@/lib/mock-data"
+
+export const dynamic = 'force-dynamic'
 
 export async function generateStaticParams() {
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
