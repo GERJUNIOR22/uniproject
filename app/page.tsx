@@ -10,7 +10,6 @@ import { Search, X, Loader2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { PROJECT_CATEGORIES } from "@/lib/types"
-import Typewriter from 'typewriter-effect'
 
 export default function HomePage() {
   const [selectedCategory, setSelectedCategory] = useState<string>("all")
